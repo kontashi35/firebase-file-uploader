@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'firebase-file-uploader'`, () => {
+  it(`should have as title 'lhu-file-uploader'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('firebase-file-uploader');
+    expect(app.title).toEqual('lhu-file-uploader');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('firebase-file-uploader app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('lhu-file-uploader app is running!');
   });
 });

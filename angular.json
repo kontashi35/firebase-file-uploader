@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firebase-file-uploader": {
+    "lhu-file-uploader": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/firebase-file-uploader",
+            "outputPath": "dist/lhu-file-uploader",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "firebase-file-uploader:build"
+            "browserTarget": "lhu-file-uploader:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "firebase-file-uploader:build:production"
+              "browserTarget": "lhu-file-uploader:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firebase-file-uploader:build"
+            "browserTarget": "lhu-file-uploader:build"
           }
         },
         "test": {
@@ -117,15 +117,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "firebase-file-uploader:serve"
+            "devServerTarget": "lhu-file-uploader:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "firebase-file-uploader:serve:production"
+              "devServerTarget": "lhu-file-uploader:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "firebase-file-uploader"
+  "defaultProject": "lhu-file-uploader"
 }

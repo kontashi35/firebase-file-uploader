@@ -29,7 +29,7 @@ export class UploadTaskComponent implements OnInit {
   startUpload() {
 
     // The storage path
-    const path = `${Date.now()}__${this.file.name}`;
+    const path = `${this.file.name}`;
 
     // Reference to storage bucket
     const ref = this.storage.ref(path);
@@ -51,14 +51,19 @@ export class UploadTaskComponent implements OnInit {
           if(fileName.includes(name.toLowerCase())){
             artistName +=name+" ";
           }
+
         }
-        this.db.collection('Audio/Categories/Music/Yu9kr7iYYHIsMjEhnsfI/Content/').add( {
-           media_url: this.downloadURL, 
+        if(artistName==""){
+          artistName="Unknown";
+          }
+        this.db.collection('songs').add( {
+           songUrl: this.downloadURL, 
            title: path,
-           date_added: new Date(),
-           description:"Tibetan Song",
-           artist:artistName,
-           media_id:Date.now()+'_id'});
+           //date_added: new Date(),
+           subtitle:"Tibetan Song",
+          // artist:artistName,
+          imageUrl:"https://firebasestorage.googleapis.com/v0/b/lhuapp-e71d4.appspot.com/o/ncs.jfif?alt=media&token=1468f736-f9b7-4f9a-8de9-19c465dcdd1c",
+           mediaId:Date.now()+'_id'});
       }),
     );
   }

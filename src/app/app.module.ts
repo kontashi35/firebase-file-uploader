@@ -12,13 +12,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 var firebaseConfig = {
-  apiKey: "AIzaSyA1syvbF-LuEK937af2qXuwakWKP2aYOdM",
-  authDomain: "techtibetmusic.firebaseapp.com",
-  databaseURL: "https://techtibetmusic.firebaseio.com",
-  projectId: "techtibetmusic",
-  storageBucket: "techtibetmusic.appspot.com",
-  messagingSenderId: "423225161491",
-  appId: "1:423225161491:web:5454c9c811b4e4e6264ce6"
+  apiKey: "AIzaSyAsqmyHCQ-aJgwQ5OfnW516zuxCOekvuVA",
+  authDomain: "lhuapp-e71d4.firebaseapp.com",
+  projectId: "lhuapp-e71d4",
+  storageBucket: "lhuapp-e71d4.appspot.com",
+  messagingSenderId: "490348885803",
+  appId: "1:490348885803:web:24a4bea643d7ca0000376e",
+  measurementId: "G-7DL5SS9TJ7"
 };
 @NgModule({
   declarations: [
