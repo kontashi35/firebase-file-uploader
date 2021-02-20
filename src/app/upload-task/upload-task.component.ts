@@ -58,11 +58,11 @@ export class UploadTaskComponent implements OnInit {
           }
         this.db.collection('songs').add( {
            songUrl: this.downloadURL, 
-           title: path,
+           title: path.split('.').slice(0, -1).join('.'),
            //date_added: new Date(),
-           subtitle:"Tibetan Song",
+           subtitle:artistName,
           // artist:artistName,
-          imageUrl:"https://firebasestorage.googleapis.com/v0/b/lhuapp-e71d4.appspot.com/o/ncs.jfif?alt=media&token=1468f736-f9b7-4f9a-8de9-19c465dcdd1c",
+          imageUrl:"https://raw.githubusercontent.com/kontashi35/lhu-file-uploader/master/src/assets/music.png",
            mediaId:Date.now()+'_id'});
       }),
     );
