@@ -8,7 +8,7 @@ export class Constant{
       'dolma',
       'tashi',
       'palmo','choden','sopa','karma','norbu','dhundup','phuntsok','namgyal',
-      'kunchok','dorje','dawa','yankyi','tsering','yangom','anu'
+      'kunchok','dorje','dawa','yankyi','tsering','yangom','anu','tenkun','passang','SEUNGYI'
   ];
     constructor(){
         
