@@ -22,6 +22,7 @@ var firebaseConfig = {
 };
 @NgModule({
   declarations: [
+    
     AppComponent,
     DropzoneDirective,
     UploaderComponent,
