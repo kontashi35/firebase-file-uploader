@@ -56,13 +56,15 @@ export class UploadTaskComponent implements OnInit {
         if(artistName==""){
           artistName="Unknown";
           }
+        var newPath = path.split('.').slice(0, -1).join('.');
+        newPath = newPath.replace("Video","");
         this.db.collection('songs').add( {
            songUrl: this.downloadURL, 
-           title: path.split('.').slice(0, -1).join('.'),
+           title: newPath,
            //date_added: new Date(),
            subtitle:artistName,
           // artist:artistName,
-          imageUrl:"https://raw.githubusercontent.com/kontashi35/lhu-file-uploader/master/src/assets/music.png",
+          imageUrl:"https://github.com/kontashi35/lhu-file-uploader/blob/master/src/assets/holder.png?raw=true",
            mediaId:Date.now()+'_id'});
       }),
     );

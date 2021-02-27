@@ -12,13 +12,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 var firebaseConfig = {
-  apiKey: "AIzaSyAsqmyHCQ-aJgwQ5OfnW516zuxCOekvuVA",
-  authDomain: "lhuapp-e71d4.firebaseapp.com",
-  projectId: "lhuapp-e71d4",
-  storageBucket: "lhuapp-e71d4.appspot.com",
-  messagingSenderId: "490348885803",
-  appId: "1:490348885803:web:24a4bea643d7ca0000376e",
-  measurementId: "G-7DL5SS9TJ7"
+  apiKey: "AIzaSyBJeXdnQk_fH40qtk0tT5wScBP1HYrUaWA",
+  authDomain: "lhuapp-eca3c.firebaseapp.com",
+  projectId: "lhuapp-eca3c",
+  storageBucket: "lhuapp-eca3c.appspot.com",
+  messagingSenderId: "156536025838",
+  appId: "1:156536025838:web:f2e8eb87ec680aa9cbf9ff",
+  measurementId: "G-ZEN6DS1J9R"
 };
 @NgModule({
   declarations: [
